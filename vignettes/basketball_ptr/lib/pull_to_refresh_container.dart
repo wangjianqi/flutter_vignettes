@@ -64,6 +64,7 @@ class _BasketballPTRContainerAnimationState extends State<BasketballPTRContainer
 
     _scaleAnimation = TweenSequence<double>([
       TweenSequenceItem(
+        ///chain
         tween: Tween<double>(begin: 0.5, end: 0.0).chain(CurveTween(curve: ElasticOutCurve(0.65)).chain(
           Tween<double>(begin: 0.0, end: 0.5),
         )),
@@ -78,6 +79,7 @@ class _BasketballPTRContainerAnimationState extends State<BasketballPTRContainer
     _controller.addListener(() {
       setState(() {});
       if (_controller.value > 0.9) {
+        ///通知
         DoneLoadingNotification()..dispatch(context);
       }
     });
@@ -183,6 +185,7 @@ class _BasketballPTRContainerAnimationState extends State<BasketballPTRContainer
       ),
     ];
 
+    ///球
     children.insert(_controller.value > 0.28 ? 2 : 4, SpinningBasketball(controller: _controller, maxHeight: _maxHeight));
 
     return Stack(

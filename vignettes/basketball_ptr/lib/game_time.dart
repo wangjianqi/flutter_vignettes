@@ -32,6 +32,7 @@ class GameTime extends StatelessWidget {
 
     // Use the dart spread operator to change the ui based off of the data model
     return Row(children: [
+      ///...
       if (data.quarter == BasketballGameQuarter.HALF_TIME) ...{
         Container(
           color: ThemeInfo.accent2,
@@ -47,6 +48,7 @@ class GameTime extends StatelessWidget {
               style: TextStyle(color: Colors.black, fontSize: 8, fontWeight: FontWeight.w600, fontFamily: 'OpenSans', package: App.pkg)),
         ),
       } else ...{
+        ///...
         Container(
           color: ThemeInfo.accent2,
           padding: EdgeInsets.symmetric(vertical: 2, horizontal: 14),

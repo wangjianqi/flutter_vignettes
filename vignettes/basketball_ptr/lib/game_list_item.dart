@@ -37,6 +37,7 @@ class GameListItem extends StatelessWidget {
           GameScore(data: data),
           // The Highlights text has a rounded border
           Container(
+            ///装饰
             decoration: ShapeDecoration(
               shape: RoundedRectangleBorder(
                 side: BorderSide(color: ThemeInfo.background0),

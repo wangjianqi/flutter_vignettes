@@ -5,7 +5,7 @@ import 'package:shared/ui/animated_sprite.dart';
 
 import 'scaling_info.dart';
 import 'main.dart';
-
+///曲线
 class SineCurve extends Curve {
   final double start;
   final double length;

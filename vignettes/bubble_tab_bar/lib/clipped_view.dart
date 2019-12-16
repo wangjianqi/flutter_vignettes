@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 //Hides the overflow of a child, preventing the Flutter framework from throwing errors
+///
 class ClippedView extends StatelessWidget {
   final Widget child;
   final Axis clipDirection;

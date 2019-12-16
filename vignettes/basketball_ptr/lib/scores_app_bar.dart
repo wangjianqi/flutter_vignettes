@@ -16,6 +16,7 @@ class ScoresAppBar extends StatelessWidget {
             const Color(0xFF1094A7),
             const Color(0xFFF37B4D),
           ],
+          ///模式
           tileMode: TileMode.clamp,
         ),
       ),

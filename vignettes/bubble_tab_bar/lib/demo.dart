@@ -48,6 +48,7 @@ class _BubbleTabBarDemoState extends State<BubbleTabBarDemo> {
     var accentColor = _navBarItems[_selectedNavIndex].selectedColor;
 
     //Create custom navBar, pass in a list of buttons, and listen for tap event
+    ///底部导航栏
     var navBar = NavBar(
       items: _navBarItems,
       itemTapped: _handleNavBtnTapped,
